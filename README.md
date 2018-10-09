@@ -12,16 +12,16 @@ curl -v https://api.testpay.com/payments/payment \
 -H "Authorization: Bearer <Access-Token>" \
 -d '{
 "intent": "order",
-"notification_url": "https://example.com/your_notification_url",
+"notification_url": "https://example.com/url",
 "payer": {
 "email": "test@example.com"
 },
 "transaction": {
-"external_id": “123456789”
+"external_id": "123456789"
 "amount": {
 "value": "7.47",
 "currency": "USD"
 },
-"description": “The payment transaction description”
+"description": "The payment transaction description"
 }
 }'
